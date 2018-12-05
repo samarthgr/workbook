@@ -1,0 +1,105 @@
+Linux Commands
+
+Different shells available
+bash - basic and pretty popular
+zsh
+fish - really awsome try this
+
+Commands
+--------
+
+which <command> - tells which path of the executable
+
+history - to get list of all commands that has ran
+
+wc -c   - word count
+wc -l   - word count by line, tells how many lines in file
+    These are generally used as a piped command to a file or other output of process
+
+uname -a   - to get the kernel version
+
+cd [relative_path/absolute_path] - change directory
+    cd /                     root of the directory (uppermost that we can go)
+    cd ..                    goes one directory up
+    cd -                     USEFUL goes to the previous directory which was open
+    cd ~                     goes to home dir
+    
+ls - lists, prints out what your current dir contains
+    ls -a                    list all the files [including hidden]
+    ls -alb                  all the info about the file
+
+mkdir <dirname> - creates new directory
+
+rm <filename> - to remove file
+    rm -r <dirname> - to remove dir and everything inside it
+
+stat <filename> - to get all info about the file
+
+
+CONTROL COMMAND
+---------------
+
+ctrl+a                      to go to begining of the a long command typed
+ctrl+e                      goes to end of the line/command
+ctrl+u                      clears the command
+up/down arrow keys          to go to previously executed commands
+ctrl+r                      reverse search, to search for previously executed command
+ctrl+z                      stop the process but doesn't kill it
+
+ps - lists all the process running that you have access to
+    ps -auxww               all, users, exe
+    ps -aux | grep <pname>  to search for particular process that's running
+
+sleep <milliseconds> - to sleep to given number of milliseconds
+
+bg - to background a process
+
+kill <pid> - to kill a process
+    kill -9                 for stronger version of kill
+
+w - to see if someone is ssh on your linux
+    watch w                 watch is useful to combine with that
+
+Difference between pipe(|) and arrow(>)
+    >                       write redirect, used to pipe output into files, usually used with files
+    >>                      will append the O/P to file.
+    |                       to pipe/combine different different processes
+    >&2                     to capture all o/p. '>' prints only stdio, adding '&2' prints error o/p also
+    
+nano <filename> - to view the content of file in user friendly way
+
+cat <filename>  - concatinate into the console IO, basically print out the file content in console
+
+head <filename> - takes first 10 lines and outputs it
+
+tail <filename> - takes bottom 10 lines and outputs it
+
+top - watch what all processes are going on in interactive ways
+htop - with color, cool things to use with this.
+
+wget <url> - web get, to pull a website or any html page
+
+Difference between wget and curl
+    wget actually download the file, where as curl just looks at the urls
+
+alias <some_command>=<short_command> - used to alias certain command to other once
+
+env - to list all the current environment variables
+
+export <name>=<value> - to set an environment variable
+
+*********
+TRY this, its beautiful
+
+cmatrix -C blue -s | lolcat
+********
+
+CUSTOMISE COMMAND PROMPT
+------------------------
+
+
+
+
+
+
+
